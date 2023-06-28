@@ -8,6 +8,18 @@ group = 'com.platzi'
 version = '1.0'
 sourceCompatibility = '11'
 
+
+
+java {
+	sourceCompatibility = '11'
+}
+jar {
+	manifest {
+		enabled = false
+		attributes 'Main-Class': 'com.platzi.market.PlatziMarketApplication'
+	}
+}
+
 repositories {
 	mavenCentral()
 }
